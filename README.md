@@ -1,47 +1,52 @@
 # Titanic Survival Prediction
 
-This project aims to predict the survival of passengers on the Titanic using various machine learning techniques. The workflow includes data exploration, feature engineering, and model training.
+## Description and Objective
+The **Titanic Survival Prediction** project aims to build a machine learning model that predicts the survival of passengers aboard the Titanic. Using historical passenger data, we explore, clean, and analyze the dataset to engineer features and train predictive models to identify patterns that distinguish survivors from non-survivors.
 
 ---
 
-## Project Overview
-
-The Titanic Survival Prediction project focuses on predicting whether a passenger survived or not, based on features such as age, fare, passenger class, family relations, and more. This analysis covers:
-
-- Exploratory Data Analysis (EDA)
-- Feature Engineering
-- Data Cleaning
-- Model Training and Evaluation
+## Exploratory Data Analysis (EDA)
+- Check missing values  
+- Analyze variable distributions  
+- Examine correlations  
+- Detect outliers
 
 ---
 
-## Dataset
-
-The dataset used is the **Titanic dataset** from Kaggle: [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic/data).  
+## Feature Engineering & Data Cleaning
+- Handle missing values  
+- Create new features: Age segment, Fare segment, Relatives, Alone, Name length  
+- Encode categorical variables  
+- Drop unnecessary features
 
 ---
 
-## Project Structure
+## Data Preparation
+- Split features and target  
+- Apply PCA (if needed)  
+- Train-test split  
+- Scale features
 
-The project notebook is structured as follows:
+---
 
-1. **Load Packages**
-2. **Load Data**
-3. **Exploratory Data Analysis (EDA)**
-   - Variables description
-   - Find missing values
-   - Variables correlation
-   - Variables distribution
-     - Univariate Variable Analysis
-     - Bivariate Analysis
-   - Outliers detection
-4. **Feature Engineering & Data Cleaning**
-   - Handle missing values
-   - Adding new attributes
-   - Converting string values into numeric
-   - Dropping unneeded features
-   - Correlation between variables
-   - Split X & y
-   - PCA (Principal Component Analysis)
-   - Split train & test
-   - Scaling
+## Predictive Modeling
+- Logistic Regression (benchmark)  
+- KNN  
+- Decision Tree  
+- SVM  
+- Multilayer Perceptron (MLP)  
+- Cross-validation and hyperparameter tuning
+
+---
+
+## Ensemble Methods
+- Bagging: Random Forest, Bagging Classifier, Extra Tree Classifier  
+- Boosting: AdaBoost, Gradient Boosting  
+- Voting Classifier
+
+---
+
+## Feature Importance
+Identify key features impacting survival prediction.
+
+
